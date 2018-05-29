@@ -5,6 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Attach",
+            "type": "node",
+            "request": "attach",
+            "port": 5858,
+            "protocol": "auto",
+            "address": "localhost",
+            "restart": true,
+            "sourceMaps": true,
+            "localRoot": "${workspaceRoot}",
+            "remoteRoot": "/app"
+        },
+        {
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
